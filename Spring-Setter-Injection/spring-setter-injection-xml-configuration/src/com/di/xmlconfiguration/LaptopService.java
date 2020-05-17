@@ -20,7 +20,7 @@ public class LaptopService implements ILaptopService {
 			cycle = "Apr-Sept/Oct-Mar";
 			break;
 		default:
-			throw new Error("Unknow type passed");
+			throw new Error("Unknown type passed");
 		}
 		
 		return cycle;

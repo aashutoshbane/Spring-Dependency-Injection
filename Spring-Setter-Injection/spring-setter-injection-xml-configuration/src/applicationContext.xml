@@ -13,11 +13,17 @@
 	<bean id="myHpLaptop" class="com.di.xmlconfiguration.HpLaptop">
 		<!-- setup setter injection -->
 		<property name="laptopService" ref="theLaptopService"></property>
+		
+		<!-- inject literal values -->
+		<property name="serviceEmail" value="service@hp.com"></property>
 	</bean>
-<!-- 	<bean id="myDellLaptop" class="com.di.xmlconfiguration.DellLaptop"> -->
-	 		<!-- setup setter injection -->
-<!-- 		<property name="laptopService" ref="theLaptopService"></property> -->
-<!-- 	</bean> -->
+	<bean id="myDellLaptop" class="com.di.xmlconfiguration.DellLaptop">
+	 	<!-- setup setter injection -->
+		<property name="laptopService" ref="theLaptopService"></property>
+		
+		<!-- inject literal values -->
+		<property name="serviceEmail" value="service@dell.com"></property>
+	</bean>
 	
 </beans>
 
