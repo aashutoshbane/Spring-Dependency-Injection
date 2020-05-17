@@ -6,7 +6,10 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-
+    
+    <!-- load the properties file -->
+	<context:property-placeholder location="classpath:laptop.properties"/>
+	
 	<!-- define the dependency -->
 	<bean id="theLaptopService" class="com.di.xmlconfiguration.LaptopService">
 	</bean>
@@ -16,6 +19,7 @@
 		
 		<!-- inject literal values -->
 		<property name="serviceEmail" value="service@hp.com"></property>
+		<property name="headQuarters" value="${hp.headquarters}"></property>
 	</bean>
 	<bean id="myDellLaptop" class="com.di.xmlconfiguration.DellLaptop">
 	 	<!-- setup setter injection -->
@@ -23,6 +27,7 @@
 		
 		<!-- inject literal values -->
 		<property name="serviceEmail" value="service@dell.com"></property>
+		<property name="headQuarters" value="${dell.headquarters}"></property>
 	</bean>
 	
 </beans>

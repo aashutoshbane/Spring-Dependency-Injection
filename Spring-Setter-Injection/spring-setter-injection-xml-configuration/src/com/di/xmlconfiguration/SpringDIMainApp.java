@@ -38,7 +38,9 @@ public class SpringDIMainApp {
 		
 		// call our new methods to get literal values
 		System.out.println("Service email: " + hp.getServiceEmail());
+		System.out.println("HeadQuarters: " + hp.getHeadQuarters());
 		// System.out.println("Service email: " + dell.getServiceEmail());
+		// System.out.println("HeadQuarters: " + dell.getHeadQuarters());
 
 		// close the context
 		context.close();

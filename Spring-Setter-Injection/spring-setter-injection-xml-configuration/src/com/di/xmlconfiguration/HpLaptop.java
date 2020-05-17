@@ -4,7 +4,16 @@ public class HpLaptop implements ILaptop {
 	
 	private ILaptopService laptopService;
 	private String serviceEmail;
+	private String headQuarters;
 	
+	public String getHeadQuarters() {
+		return headQuarters;
+	}
+
+	public void setHeadQuarters(String headQuarters) {
+		this.headQuarters = headQuarters;
+	}
+
 	public String getServiceEmail() {
 		return serviceEmail;
 	}
